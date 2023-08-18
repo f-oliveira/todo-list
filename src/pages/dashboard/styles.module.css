@@ -14,7 +14,7 @@
   max-width: 1024px;
   width: 100%;
   padding: 0 18px;
-  padding-top: 28px;
+  padding-bottom: 28px;
   margin-top: 58px;
 }
 
@@ -23,18 +23,18 @@
   margin-bottom: 8px;
 }
 
-.checkboxArea {
-  margin: 14px 0;
-}
-
 .checkboxArea label {
   margin-left: 8px;
   color: #fff;
 }
 
+.checkboxArea {
+  margin: 14px 0;
+}
+
 .checkbox {
-  height: 18px;
   width: 18px;
+  height: 18px;
 }
 
 .button {
@@ -52,12 +52,13 @@
   padding: 0 18px;
   width: 100%;
   max-width: 1024px;
+  display: flex;
+  flex-direction: column;
 }
 
 .taskContainer a {
   text-decoration: none;
   color: #0f0f0f;
-
 }
 
 .taskContainer h1 {
