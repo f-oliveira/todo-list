@@ -1,17 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '../styles/home.module.css'
-import heroImg from "../../public/assets/hero.png";
+import Head from "next/head";
+import styles from "../styles/home.module.css";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
+import heroImg from "../../public/assets/hero.png";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <Head>
-        <title>Tarefas+ | Organize de forma mais fácil</title>
+        <title>Tarefas+ | Organize suas tarefas de forma fácil</title>
       </Head>
+
       <main className={styles.main}>
         <div className={styles.logoContent}>
           <Image
@@ -25,7 +24,16 @@ export default function Home() {
           Sistema feito para você organizar <br />
           seus estudos e terefas
         </h1>
+
+        <div className={styles.infoContent}>
+          <section className={styles.box}>
+            <span>+12 posts</span>
+          </section>
+          <section className={styles.box}>
+            <span>+90 comentários</span>
+          </section>
+        </div>
       </main>
-    </>
-  )
+    </div>
+  );
 }
